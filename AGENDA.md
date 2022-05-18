@@ -1,13 +1,13 @@
 # **AGENDA**
-# Introduction
+## Introduction
 
-# Pages
+## Pages
 1. Assignmnet Pages
 2. Linked to Github
 3. Setup Page
-4.
 
-# Chapter 2
+
+## Chapter 2
 1. Lecture Notes
 2. Exercises 
   - Variable Assignment 
