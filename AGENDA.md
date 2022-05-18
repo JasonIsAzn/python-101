@@ -8,7 +8,7 @@
 
 
 ## Chapter 2
-1. Lecture Notes
+1. ~~Lecture Notes~~
 2. Exercises 
   - Variable Assignment 
   - String Formatting
