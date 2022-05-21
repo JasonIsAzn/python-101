@@ -1,66 +1,82 @@
+# CH2 
+# Jason Le Notes
+
+# Note: Multi-strings are self notes
+
+
 ### Interger and String Values ###
 
 """
-Consist of Whole numbers that can be zero, pos, or neg
+The Basic Data types are Integers(Ints) and Strings
+Integers consist of whole numbers that can be zero, pos, or neg, so no fractions
+No commas
+
+Strings always contained in single/dobule qoutes
 """
 # Integers
 print(1)
-print(24) 
 print(2022) 
 print(0) 
 print(-1)
 
-"""
-No Qoutes and No Commas
-"""
 # Strings
+print("2022")
 print("Howdy")
 print('howdy')
 
+print(4)
+print("4")
+
+print(type(4))
+print(type("4"))
+
 # plus operator
-print(1 + 1) # addition
+print(3 + 2) # addition
 print("howdy and " + "gig'em") # string concatenation
- 
+
+print(3 + 5)
+print("3" + "5")
+
+
+# str and int function
+print(str(5))
+print(int('5'))
+
 print("howdy, " + str(5))
 print(1 + int("5"))
 
-print(type("howdy, " + str(5)))
-print(type(1 + int("5")))
-
-# print("howdy, " + 5)
-
-"""More on Str and int"""
-print(str(5))
-print(type(str(5)))
-
-print(int('5'))
+# print(int('hello))
 # print(int('5.2'))
-
-
-
-
-
 
 ### Variables and Assignment  ###
 """
 The value 10 is binded to a variable called x 
 = is called assignmnet operator
-
+x is assigned 10
 """
 # basics
 x = 10
-print(x)
-x = 5 
-print(x)
-x = 2 
-print(x)
+# illegal: 10 = x
 
-# print variables
+
+# printing variables
+"""automatically prints newline"""
 # similar to print('x = ' + 2)
 print('x = ' + str(x))
 print('x=', x)
 
+# reassignmnet 
+x = 5 
+print(x)
+x = 3
+print(x)
+
 # tuple Assignment
+""" 
+Assign Values Respecively
+Does not work if left side is not the same as right side
+Tuple is data type similar 
+"""
 x, y, z = -1, 10 ,25
 print (x, y, z)
 x, y, z = 5.2, "thisword", 5
@@ -80,7 +96,8 @@ a = 5
 b = 5
 # ex3 
 x = 2
-del x
+del x, a, b
+#print(x)
 
 
 
@@ -134,9 +151,23 @@ print(2.0)
 
 print(6.022e23)
 print(2.99e3)
+print(2.99E3)
+
+print(round(28.71))
+print(round(93.323, 2))
+print(round(93.323, 4))
+print(round(93.323, -3))
+
+print(int(19.832))
+print(type(1.0))
+print(type(2))
+print(type('2'))
+
+
 ### Control Codes with Strings ###
 # All start with an esacpe code
 """
+"Normal" Characters are a-b digits and symbols
 These are character you can not normally
 have in a string
 """
@@ -166,8 +197,17 @@ print("Make a Sound: \a ")
 
 ### Input ###
 
-name = ""
-#name = input("Please Enter your Name: ")
+#Basic 
+x = input()
+print(x)
+
+# add text
+print("Enter text: ")
+x = input() # produce a string value
+print("you entered: ", x)
+print (type(x))
+
+name = input("Please Enter your Name: ")
 print(name)
 
 print("Howdy, Welcome to Python101")
@@ -175,7 +215,12 @@ print("Please Enter your Name: ")
 #name = input()
 print("Printing Name...:", name)
 
+# Demo puasing, functional composition, and problems
+x = int(input("Enter Value for x: "))
+y = int(input("Enter Value for y: "))
 
+x = float(input("Enter Value for x: "))
+y = float(input("Enter Value for y: "))
 
 ### Customize Print Function ###
 # sep and end
@@ -205,7 +250,6 @@ print("my name is {0} and I'm {1} years old". format("Jason", 20))
 print("my name is {1} and I'm {0} years old". format("Jason", 20))
 # variable
 print("my name is {name} and I'm {age} years old". format(name ="Jason", age=20))
-
 # alignments
 print("{:<5},{:>5}".format(2, 5))
 print("{:*<5},{:^>5}".format(2, 5))
@@ -226,7 +270,7 @@ print("{:&>+10.2f}, {:_^10}".format(12313122.2342, "hello"))
 
 print("{:,}".format(1231231))
 
-
+print ("-"*10)
 # multistring
 """
 can also be ued a multicomments
@@ -235,7 +279,7 @@ also called doc string for functions
 x =  """cool   
 hello
 world
-sfdsf
+wow
 """
 print(x)
 
